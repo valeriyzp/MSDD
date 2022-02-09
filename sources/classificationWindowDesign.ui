@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>346</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MSDD | Класифікація</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #eaeffa;</string>
+  </property>
+  <widget class="QWidget" name="main">
+   <layout class="QVBoxLayout" name="main_layout">
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QComboBox" name="model_select">
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+	color: #4c5b61;
+    background-color: #f7f7f7;
+	border-radius: 10px;
+	border: 2px solid;
+	border-color: #4c5b61;
+	spacing: 40px;
+	padding-left: 5px;
+	height: 28px;
+	margin-bottom: 10px;
+}
+
+QComboBox:hover:!pressed {
+	background-color: #f0f0f0;
+}
+
+QComboBox::drop-down:hover:!pressed {
+	background-color: #424b53;
+}
+
+QComboBox::drop-down:pressed {
+	background-color: #393e46;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 2px solid #4c5b61;
+	border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	background-color: #4c5b61;
+}
+
+QComboBox QAbstractItemView{
+    background-color: #f7f7f7;
+	border: 2px solid #4c5b61;
+	border-radius: 1px;
+
+
+    selection-background-color: lightgray;
+	selection-color: #4c5b61;
+	selection-padding-left: 5px;
+
+	outline: none;
+}
+
+lightgray
+4c5b61</string>
+      </property>
+      <property name="placeholderText">
+       <string>Виберіть модель</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="classify_b">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: #f7f7f7;
+    background-color: #4c5b61;
+	border-radius: 10px;
+	margin: 10px 0px 20px 0px;
+	height: 32px;
+	font: 10pt 'Consolas';
+}
+
+QPushButton:pressed {
+	background-color: #393e46;
+	font: bold;
+}
+
+QPushButton:hover:!pressed {
+	background-color: #424b53;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Завантажити та класифікувати зображення</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="image">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="prediction">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 12pt;
+	font-weight: bold;
+}</string>
+      </property>
+      <property name="text">
+       <string>передбачення</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MSDD | </string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #eaeffa;</string>
+  </property>
+  <widget class="QWidget" name="main">
+   <layout class="QVBoxLayout" name="main_layout">
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="model_name_value">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 14pt;
+	font-weight: bold;
+	margin-bottom: 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Назва моделі</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="statistic_layout">
+      <item row="5" column="0">
+       <widget class="QLabel" name="train_loss_label">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Витрати на навчальному наборі: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="test_acc_label">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Точність на тестовому наборі: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="val_acc_label">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Точність на валідаційному наборі: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="val_loss_label">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Витрати на валідаційному наборі: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="train_acc_label">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Точність на навчальному наборі: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="test_loss__label">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Витрати на тестовому наборі: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="params_label">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Кількість параметрів: </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="test_acc_value">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="test_loss_value">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="val_acc_value">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="val_loss_value">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="train_acc_value">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="train_loss_value">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="params_value">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-family: 'Consolas';
+	font-size: 10pt;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="MatplotlibWidget" name="matplotlib_accuracy_plot" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">margin-top: 10px;
+margin-bottom: 10px;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="MatplotlibWidget" name="matplotlib_loss_plot" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">margin-top: 10px;
+margin-bottom: 10px;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttons_layout">
+      <item>
+       <widget class="QPushButton" name="train_b">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #f7f7f7;
+    background-color: #4c5b61;
+	border-radius: 10px;
+	margin: 10px 10px 0px 10px;
+	height: 32px;
+	font: 10pt 'Consolas';
+}
+
+QPushButton:pressed {
+	background-color: #393e46;
+	font: bold;
+}
+
+QPushButton:hover:!pressed {
+	background-color: #424b53;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Донавчити</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="retrain_b">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #f7f7f7;
+    background-color: #4c5b61;
+	border-radius: 10px;
+	margin: 10px 10px 0px 10px;
+	height: 32px;
+	font: 10pt 'Consolas';
+}
+
+QPushButton:pressed {
+	background-color: #393e46;
+	font: bold;
+}
+
+QPushButton:hover:!pressed {
+	background-color: #424b53;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Навчити</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stop_b">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #f7f7f7;
+    background-color: #4c5b61;
+	border-radius: 10px;
+	margin: 10px 10px 0px 10px;
+	height: 32px;
+	font: 10pt 'Consolas';
+}
+
+QPushButton:pressed {
+	background-color: #393e46;
+	font: bold;
+}
+
+QPushButton:hover:!pressed {
+	background-color: #424b53;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Зупинити навчання</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>UI.MatplotlibWidget</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

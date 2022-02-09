@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>410</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Metal Surfaces Defects Detection</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #eaeffa;</string>
+  </property>
+  <widget class="QWidget" name="main">
+   <layout class="QVBoxLayout" name="main_layout">
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="info_layout">
+      <item>
+       <spacer name="info_spacer_left">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="info_logo">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>D:/MSDD/resources/icon.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="info_text">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	color: #393e46;
+	font-family: 'Consolas';
+	font-size: 24pt;
+	font-weight: bold;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Metal
+Surfaces
+Defects
+Detection</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="info_spacer_right">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="training_b">
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: #f7f7f7;
+    background-color: #4c5b61;
+	border-radius: 10px;
+	margin: 20px 30px 10px 30px;
+	height: 32px;
+	font: 14pt 'Consolas';
+}
+
+QPushButton:pressed {
+	background-color: #393e46;
+	font: bold;
+}
+
+QPushButton:hover:!pressed {
+	background-color: #424b53;
+}</string>
+      </property>
+      <property name="text">
+       <string>Навчання</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="classification_b">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: #f7f7f7;
+    background-color: #4c5b61;
+	border-radius: 10px;
+	margin: 10px 30px 10px 30px;
+	height: 32px;
+	font: 14pt 'Consolas';
+}
+
+QPushButton:pressed {
+	background-color: #393e46;
+	font: bold;
+}
+
+QPushButton:hover:!pressed {
+	background-color: #424b53;
+}</string>
+      </property>
+      <property name="text">
+       <string>Класифікація</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="about_b">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: #f7f7f7;
+    background-color: #4c5b61;
+	border-radius: 10px;
+	margin: 20px 30px 10px 30px;
+	height: 32px;
+	font: 14pt 'Consolas';
+}
+
+QPushButton:pressed {
+	background-color: #393e46;
+	font: bold;
+}
+
+QPushButton:hover:!pressed {
+	background-color: #424b53;
+}</string>
+      </property>
+      <property name="text">
+       <string>Про програму</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exit_b">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: #f7f7f7;
+    background-color: #4c5b61;
+	border-radius: 10px;
+	margin: 10px 30px 10px 30px;
+	height: 32px;
+	font: 14pt 'Consolas';
+}
+
+QPushButton:pressed {
+	background-color: #393e46;
+	font: bold;
+}
+
+QPushButton:hover:!pressed {
+	background-color: #424b53;
+}</string>
+      </property>
+      <property name="text">
+       <string>Вихід</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
